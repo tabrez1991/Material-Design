@@ -1,0 +1,67 @@
+.grey-theme {
+    .toolbar-background {
+      background-color: #212121; //primary
+    }
+    ion-navbar ion-icon{
+      color: #ffffff; //light
+    }
+    ion-icon{
+      color: #ffffff; //text
+    }
+    .title{
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    .fabss{
+      background-color: #000000 //dark
+    }
+    .t6item2{
+      background: #212121; //primary
+    }
+    .range-knob {
+      background-color: #000000 !important //dark
+    }
+    .range-bar-active {
+      background-color: #000000 !important //dark
+    }
+    .t5section1{
+      background-color: #E1E2E1; 
+    }
+    .t5section3{
+      background-color: #484848; //light
+    }
+    .btn{
+      background-color: #212121; //primary
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    .ccontent{
+      background: #212121; //primary
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    ion-card-header{
+      background-color: #000000; //dark
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    .t2section1{
+      background-color: #000000; //dark
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    .t2section2{
+      background-color: #212121; //primary
+    }
+    .t2section3{
+      background-color: #484848; //light
+      -webkit-text-fill-color: #ffffff; //text
+    }
+    .t2section4{
+      background-color: #E1E2E1; 
+    }
+    .hr{
+      background-color: #000000; //dark
+    }
+    .t4innersection1{
+      background-color: #212121; //primary
+    }
+    .t4innersection2{
+      background-color: #E1E2E1; 
+    }
+  }

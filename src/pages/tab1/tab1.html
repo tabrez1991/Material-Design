@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon name="menu" color="light"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title class="title">Tab 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="row t1section1">
+    <div class="col"></div>
+  </div>
+  <ion-fab right middle>
+    <button ion-fab class="fabss"><ion-icon name="md-add"></ion-icon></button>
+  </ion-fab>
+  <div class="row t1section3">
+    <div class="col" >
+      <ion-range min="-200" max="200" [(ngModel)]="saturation" color="dark" class="range"></ion-range>
+    </div>
+  </div>
+</ion-content>

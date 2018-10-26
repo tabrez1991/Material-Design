@@ -1,0 +1,21 @@
+.sectionfull{
+    height: 100%;
+    background-color: #E1E2E1;
+    padding: 8%;
+    margin-top: 10%;
+}
+.t6item2{
+    background: map-get($colors,primary);
+}
+.t6label{
+    -webkit-text-fill-color: map-get($colors,text);
+}
+.t6item1, .t6item2, .t6item3, .t6item4, .t6item5, .t6item6{
+    height: 12%;
+}
+.t6item6{
+    background-color: #E1E2E1;
+}
+.toolbar-background{
+    background-color: map-get($colors,primary);
+}

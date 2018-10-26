@@ -1,0 +1,73 @@
+<ion-menu [content]="content">
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Colors</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+      <ion-item menuClose (click)="chooseTheme($event)" id="red">
+        <ion-label color="Red">Red</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="pink">
+        <ion-label color="Pink">Pink</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="purple">
+        <ion-label color="Purple">Purple</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="deeppurple">
+        <ion-label color="DeepPurple">Deep Purple</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="indigo">
+        <ion-label color="Indigo">Indigo</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="blue">
+        <ion-label color="Blue">Blue</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="lightblue">
+        <ion-label color="LightBlue">Light Blue</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="cyan">
+        <ion-label color="Cyan">Cyan</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="teal">
+        <ion-label color="Teal">Teal</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="green">
+        <ion-label color="Green">Green</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="lightgreen">
+        <ion-label color="LightGreen">Light Green</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="lime">
+        <ion-label color="Lime">Lime</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="yellow">
+        <ion-label color="Yellow">Yellow</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="amber">
+        <ion-label color="Amber">Amber</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="orange">
+        <ion-label color="Orange">Orange</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="deeporange">
+        <ion-label color="DeepOrange">Deep Orange</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="brown">
+        <ion-label color="Brown">Brown</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="grey">
+        <ion-label color="Grey">Grey</ion-label>
+      </ion-item>
+      <ion-item menuClose (click)="chooseTheme($event)" id="bluegrey">
+        <ion-label color="BlueGrey">Blue Grey</ion-label>
+      </ion-item>
+  </ion-list>
+</ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
