@@ -275,4 +275,107 @@ In theme folder you have to add many themes files like
     }
   }
 ```
+Similarly make the different themes and save as ```.scss``` format.
 
+## Tabs
+### tabs.html
+```bash
+<ion-tabs [selectedIndex]="myIndex">
+  <ion-tab [root]="tab1Root" tabTitle="Tab 1" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Tab 2" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Tab 3" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Tab 4" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab5Root" tabTitle="Tab 5" tabIcon="home"></ion-tab>
+  <ion-tab [root]="tab6Root" tabTitle="Tab 6" tabIcon="home"></ion-tab>
+</ion-tabs>
+```
+
+### tabs.ts
+```bash
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+@IonicPage()
+@Component({
+  selector: 'page-tabs',
+  templateUrl: 'tabs.html',
+})
+export class TabsPage {
+  tab1Root = 'Tab1Page';
+  tab2Root = 'Tab2Page';
+  tab3Root = 'Tab3Page';
+  tab4Root = 'Tab4Page';
+  tab5Root = 'Tab5Page';
+  tab6Root = 'Tab6Page';
+  myIndex: number;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myIndex = navParams.data.tabIndex || 0;
+  }
+}
+
+```
+### tab1.html
+```bash
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon name="menu" color="light"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title class="title">Tab 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="row t1section1">
+    <div class="col"></div>
+  </div>
+  <ion-fab right middle>
+    <button ion-fab class="fabss"><ion-icon name="md-add"></ion-icon></button>
+  </ion-fab>
+  <div class="row t1section3">
+    <div class="col" >
+      <ion-range min="-200" max="200" [(ngModel)]="saturation" color="dark" class="range"></ion-range>
+    </div>
+  </div>
+</ion-content>
+
+```
+### tab2.html
+```bash
+
+<ion-header>
+
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>Tab 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="t2section1" padding><h2 ion-text>Text</h2></div>
+  <div class="t2section2"></div>
+  <div class="t2section3">
+    <h3 ion-text>ITEM 1 <hr class="hr"></h3>
+    <h3 ion-text>ITEM 2</h3>
+    <h3 ion-text>ITEM 3</h3>
+  </div>
+  <div class="t2section4">
+    <ion-fab right bottom>
+      <button ion-fab class="fabss"><ion-icon name="md-add"></ion-icon></button>
+    </ion-fab>
+  </div>
+</ion-content>
+
+```
+Similarly in ```bash tab3.html ``` 
