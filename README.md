@@ -5,11 +5,11 @@ This project was generated with [ionic framework](https://ionicframework.com/doc
 First install ionic framework in your pc.
 Go to terminal and run.
 ```bash
- npm install -g ionic
+$ npm install -g ionic
  ```
  Start an app
  ```bash
-ionic start Material-Design
+$ ionic start Material-Design
  ```
  ## Screenshot
 
@@ -20,18 +20,18 @@ ionic start Material-Design
 Open your code in editor.
 Make pages folder and add pages into it by using the code.
 ```bash
-ionic g page menu
-ionic g page tab1
-ionic g page tab2
-ionic g page tab3
-ionic g page tab4
-ionic g page tab5
-ionic g page tab6
-ionic g page tabs
+$ ionic g page menu
+$ ionic g page tab1
+$ ionic g page tab2
+$ ionic g page tab3
+$ ionic g page tab4
+$ ionic g page tab5
+$ ionic g page tab6
+$ ionic g page tabs
 ```
 And also add
 ```bash
-ionic generate provider
+$ ionic generate provider
 ```
 ## settings.ts
 ```bash
@@ -378,4 +378,14 @@ export class TabsPage {
 </ion-content>
 
 ```
-Similarly in ```bash tab3.html ``` 
+Similarly in ```tab3.html```, ```tab4.html```,```tab5.html``` and ```tab6.html``` changes with your own design.
+
+## Run in browser
+```bash
+$ ionic serve
+``` 
+## Run in ios simulator
+```bash
+$ ionic cordova build ios
+$ ionic cordova emulate ios
+```
